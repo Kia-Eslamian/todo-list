@@ -6,6 +6,7 @@ const userSchema = new Schema({
     lastName: {type: String, minLength: 3, maxLength: 30, required: true},
     password: {type: String, minLength: 8, required: true},
     email: {type: String, required: true, unique: true},
+    isActive: {type: Boolean, default: false},
 
 }, {timestamps: true});
 
