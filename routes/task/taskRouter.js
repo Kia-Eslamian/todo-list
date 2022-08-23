@@ -15,11 +15,12 @@ router.post('/', async (req, res) => {
         const title = req.body['title'];
         const description = req.body['description'];
 
-        await taskModel.create({user: user._id, title, description});
+        const task = await taskModel.create({user: user._id, title, description});
 
         return res.status(200).json({
             success: true,
-            message: "new task created"
+            message: "new task created",
+            data: task
         });
 
 
@@ -87,7 +88,6 @@ router.get('/list', async (req, res) => {
         const user = req.session.user;
 
         const tasks = await taskModel.find({user: user._id}, {
-            '_id': 0,
             'user': 0,
             'updatedAt': 0,
             '__v': 0

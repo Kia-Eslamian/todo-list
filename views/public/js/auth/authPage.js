@@ -132,8 +132,8 @@ function login() {
                 if (response.success) {
 
                     // $('#alertWrapper').append(alertBox(alertId, 'success', 'successful', response.message));
-                    // window.location.replace('http://localhost:5000/auth/handler');
-                    // todo redirect user to home page
+                    window.location.replace('http://localhost:5000/home');
+
                     console.log(response)
 
                 } else if (!response.success) {

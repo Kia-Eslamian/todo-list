@@ -9,15 +9,34 @@ const banForNotLoggedInUsers = require('../modules/middleware/auth/banForNotLogg
 // sub routers
 const userRouter = require('./user/userRouter');
 const taskRouter = require('./task/taskRouter');
-const noteRouter = require('./note/noteRouter');
+
 
 
 router.use('/user', userRouter);
 router.use('/task', taskRouter);
-router.use('/note', noteRouter);
 
 
-// API
+
+/* API */
+
+// root route
+router.get('/', (req, res) => {
+    try {
+
+        const user = req.session.user;
+
+        if (user) {
+            return res.redirect('http://localhost:5000/home');
+        } else {
+            return res.redirect('http://localhost:5000/door');
+        }
+
+    } catch (error) {
+        console.log(error);
+        return res.status(500).json({success: false, message: "Internal server error"});
+    }
+});
+
 
 // authentication page
 router.get('/door', banForAlreadyLoggedInUsers, async (req, res) => {

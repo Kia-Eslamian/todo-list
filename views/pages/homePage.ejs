@@ -25,7 +25,7 @@
 
 <div class="container-fluid">
 
-    <!-- todo: config modal box -->
+
     <!-- modalBox wrapper -->
     <div class="row" id="modalContainer">
         <div class="modalWrapper">
@@ -70,13 +70,11 @@
 
     <!-- main container -->
     <div class="container">
-
         <div class="row">
-
             <!-- todo list -->
             <div class="col-md-6 mt-5 mb-5">
+                <!-- tasks controller -->
                 <div class="todoListWrapper d-flex flex-column">
-
                     <input type="text" class="form-control mb-2" id="taskTitleInput" aria-describedby="emailHelp"
                            placeholder="task title">
 
@@ -87,13 +85,10 @@
                         task
                     </button>
                 </div>
-
-
+                <!-- cards of tasks wrapper-->
                 <div class="todoListCardsWrapper d-flex flex-column mt-5">
-
-
-                    <!-- todo card -->
-                    <div class="card d-flex flex-column p-2 mb-2" id="taskWrapper">
+                    <!-- cards of tasks -->
+                    <!--<div class="card d-flex flex-column p-2 mb-2" id="taskWrapper">
                         <div id="taskStatusWrapper" class="p-2">
                             <input type="checkbox" name="" id="taskStatusCheckbox">
                         </div>
@@ -104,38 +99,17 @@
                                 quisquam animi sapiente consequatur. Sit quasi dolore saepe suscipit. </p>
                         </div>
 
-                    </div>
+                        <div id="cardId"></div>
+
+                    </div>-->
 
                 </div>
 
 
             </div>
 
-
-            <!-- notepad -->
+            <!-- calender -->
             <div class="col-md-6 mt-5 mb-5 ">
-
-                <div class="notepadWrapper d-flex flex-column">
-
-                        <textarea class="form-control mb-2" id="noteInput" rows="5"
-                                  placeholder="enter your note"></textarea>
-
-                    <button class="btn btn-primary" id="saveNoteBtn" type="submit">create new note</button>
-                </div>
-
-
-                <div class="noteCardsWrapper d-flex flex-column mt-5">
-                    <!-- todo card -->
-                    <div class="card d-flex flex-column p-2 mb-2" id="noteWrapper">
-                        <div id="noteWrapper" class="p-2">
-                            <p id="noteTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem qui
-                                delectus ea
-                                quisquam animi sapiente consequatur. Sit quasi dolore saepe suscipit. </p>
-                        </div>
-
-                    </div>
-
-                </div>
 
             </div>
 
