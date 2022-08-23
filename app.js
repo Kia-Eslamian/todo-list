@@ -1,5 +1,6 @@
 const express = require('express');
 const session = require('express-session');
+const path = require('path');
 require('colors');
 
 
@@ -20,11 +21,12 @@ app.use(express.json());
 
 
 /* implementation view engine */
-// app.set('view engine', 'ejs');
-// app.set('views', path.join(__dirname, '../views'));
-// app.use(express.static(path.join(__dirname, '../views/public')));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './views'));
+app.use(express.static(path.join(__dirname, './views/public')));
 
 
+/* session */
 app.use(session({
     secret: process.env.APP_SECRET_AUTH_SESSION,
     resave: true,

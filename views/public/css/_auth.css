@@ -1,0 +1,127 @@
+:root {
+    --white: #ffffff;
+    --primaryBlue: #4267B2;
+    --secondaryBlue: #4b82f1;
+    --primaryRed: #f10a0a;
+    --grayDark: #eee;
+    --grayLight: #f8f8f8;
+}
+
+.frame {
+    margin-top: 20px;
+}
+
+/* top controllers */
+.frame .controllers {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    opacity: 1;
+    transition: all .5s ease
+}
+
+.frame .controllers ul li a {
+    padding-left: 10px;
+    font-size: 18px;
+    display: inline;
+    text-align: left;
+    text-transform: uppercase;
+    padding-right: 10px;
+    cursor: pointer;
+    color: #929292
+}
+
+.controllers ul li a {
+    text-decoration: none;
+}
+
+.active {
+    padding-bottom: 10px;
+    color: #333333 !important;
+    text-decoration: none;
+    border-bottom: solid 2px var(--primaryBlue);
+    /* transition: all .25s ease; */
+    cursor: pointer
+}
+
+.inactive {
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* transition: all .25s ease; */
+    cursor: pointer;
+}
+
+/* forms */
+.forms input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(235, 235, 235);
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: rgb(243, 243, 243)
+}
+
+.forms label {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: #333333;
+    display: block
+}
+
+.forms button {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: var(--secondaryBlue);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.forms button i {
+    margin-left: 20px;
+}
+
+.forms button:hover {
+    background-color: var(--primaryBlue);
+    transition: ease-out .5s;
+}
+
+/* auth form */
+
+.form-signin {
+    width: 100%;
+    padding: 10px;
+    transition: opacity .5s ease, transform .5s ease
+}
+
+.form-signin-left {
+    transform: translateX(-400px);
+    opacity: .0
+}
+
+.form-signup {
+    width: 100%;
+    padding: 10px;
+    transition: opacity .5s ease, transform .5s ease
+}
+
+.form-signup-left {
+    transform: translateX(-399px);
+    opacity: 1
+}
+
+.form-auth-left {
+    transform: translateX(-400px);
+    opacity: .0
+}
+
+/* .forgetPassword {
+    text-align: center;
+    margin-top: 10px;
+} */

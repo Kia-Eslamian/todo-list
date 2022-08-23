@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- bootstrap rtl cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek" crossorigin="anonymous">
+
+    <!-- JQuery cdn -->
+    <script src="../../js/utility/jquery-3.6.0.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- todo: config modal box -->
+        <!-- modalBox wrapper -->
+        <div class="row" id="modalContainer">
+            <div class="modalWrapper">
+
+                <!-- modal box -->
+                <!-- <div class="modalMessage shadow">
+                <div class="modal-header">
+                    <h6>validation error</h6>
+                    <button id="closeBtn-modal"> <i class="fas fa-times-square"></i></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>username entered is not valid</p>
+                    <p>password entered is not valid</p>
+                </div>
+            </div> -->
+
+            </div>
+        </div>
+
+
+        <!-- alertBox wrapper -->
+        <div class="row" id="alertContainer">
+            <div class="alertWrapper" id="alertWrapper">
+
+                <!-- alert box -->
+                <!-- <div class="alertMessage shadow">
+                <div class="alert-header">
+                    <h6>validation error</h6>
+                    <button id="closeBtn-alert btn"> <i class="fas fa-times-square"></i></button>
+                </div>
+
+                <div class="alert-body">
+                    <p>username entered is not valid</p>
+                    <p>password entered is not valid</p>
+                </div>
+            </div> -->
+
+            </div>
+        </div>
+
+
+        <!-- main container -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../img/static/auth-banner.png" alt="" class="img-responsive">
+                    <h6 class="text-center">Don't forget any thing</h6>
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="row">
+                        <div class="frame">
+
+                            <!-- top controllers -->
+                            <div class="controllers">
+                                <ul class="links">
+                                    <li class="">
+                                        <a id="btnController-signin" class="btnController-signin active">Login</a>
+                                    </li>
+
+                                    <li class="">
+                                        <a id="btnController-signup" class="btnController-signup inactive">Signup</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="forms">
+
+                                <!-- login form -->
+                                <form id="signinForm" action="" class="form-signin">
+
+                                    <label for="email">Email</label>
+                                    <input id="emailLogin" type="text" name="email" placeholder="" />
+
+                                    <label for="password">Password</label>
+                                    <input id="passwordLogin" type="password" name="password" placeholder="" />
+
+                                    <div class="btn-animate border-bottom pb-5">
+                                        <button id="enterBtn" class="btn-dark btn-signin">Enter<i class="far fa-sign-in"></i></button>
+                                    </div>
+
+                                    <div class="forgetPassword text-center mt-4">
+                                        <a href="#">forget password</a>
+                                    </div>
+                                </form>
+
+
+                                <!-- signup form -->
+                                <form id="signupForm" action="" class="form-signup d-none">
+
+                                    <label for="email">Email</label>
+                                    <input id="emailSignup" type="text" name="email" placeholder="" />
+
+                                    <label for="password">Password</label>
+                                    <input id="passwordSignup" type="password" name="password" placeholder="" />
+
+                                    <div class="btn-animate pb-5">
+                                        <button id="creatNewAccountBtn" class="btn-dark btn-signin">Create new account<i
+                                                class="far fa-plus"></i></button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="../../js/utility/alert.js"></script>
+    <script src="../../js/auth/authPage.js"></script>
+
+</body>
+
+</html>

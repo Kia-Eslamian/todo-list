@@ -6,10 +6,10 @@ const userModel = require('../../../models/user');
 
 
 // register
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
     try {
 
-        const {firstName, lastName, password, email} = req.body;
+        const { password, email} = req.body;
 
         /* is email exists?? */
         const isExistsEmail = await userModel.findOne({email});
@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
         }
 
 
-        await userModel.create({firstName, lastName, password, email});
+        await userModel.create({password, email});
 
 
         return res.status(200).send({
@@ -39,13 +39,13 @@ router.post('/', async (req, res) => {
 });
 
 // login
-router.post('/', async (req, res) => {
+router.post('/login', async (req, res) => {
     try {
 
         const {email, password} = req.body;
 
-        /* check username is exists??? */
-        const user = await userModel.findOne({username});
+        /* check email is exists??? */
+        const user = await userModel.findOne({email});
         if (!user) return res.status(400).send({success: false, message: 'User not exists'});
 
         /* check password is exists??? */

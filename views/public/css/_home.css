@@ -1,0 +1,22 @@
+.todoListWrapper #saveTaskBtn{
+    margin-top: 2.5px;
+}
+.todoListWrapper{
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+.notepadWrapper{
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+#taskWrapper:hover{
+    box-shadow: -11px -4px 44px -14px rgba(178, 178, 178, 0.51);
+    transition: ease-out .2s;
+    background-color: #fff;
+}
+
+#taskTitleWrapper:hover{
+    cursor: pointer;
+}

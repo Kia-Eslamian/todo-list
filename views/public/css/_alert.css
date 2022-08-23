@@ -1,0 +1,64 @@
+:root {
+    --white: #ffffff;
+    --primaryBlue: #4267B2;
+    --secondaryBlue: #4b82f1;
+    --primaryRed: #f10a0a;
+    --grayDark: #eee;
+    --grayLight: #f8f8f8;
+    --successGreen: #4BB543;
+    --errorRed: #f10a0a;
+}
+
+/* body {
+    background-color: var(--white);
+    box-sizing: border-box;
+} */
+
+
+.alertWrapper {
+    background: none;
+    width: 16rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    z-index: 1000;
+    left: 50px;
+    top: 20px;
+    position: fixed;
+    font-size: 14px;
+    transition: all 1s;
+}
+
+.alertWrapper .alertMessage {
+    /* background-color: var(--successGreen); */
+    /* border: 1px solid var(--secondaryBlue); */
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.alertWrapper .alertMessage:not(:first-child) {
+    margin-top: 10px;
+}
+
+.alertWrapper .alertMessage .alert-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    /* border-bottom: 1px solid var(--grayLight); */
+    border-bottom: none !important;
+    justify-content: space-between;
+}
+
+/* .wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+
+.alert-header button#closeBtn-alert {
+    background: none;
+    border: none;
+    color: var(--grayLight);
+    font-size: 17px;
+}

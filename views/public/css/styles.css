@@ -1,0 +1,41 @@
+@import url('_alert.css');
+@import url('_auth.css');
+@import url('_home.css');
+
+/* @import url('_adminSidebar.css'); */
+
+
+:root {
+    --primaryBlue: #4267b2;
+    --primaryBlue-op: #4267b24b;
+}
+
+body {
+    box-sizing: border-box;
+    background-color:#f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.d-none {
+    display: none;
+    transition: all .25s ease;
+}
