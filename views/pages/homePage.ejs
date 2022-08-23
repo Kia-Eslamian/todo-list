@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- bootstrap rtl cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css"
+          integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek" crossorigin="anonymous">
+
+    <!-- JQuery cdn -->
+    <script src="../../js/utility/jquery-3.6.0.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <!-- todo: config modal box -->
+    <!-- modalBox wrapper -->
+    <div class="row" id="modalContainer">
+        <div class="modalWrapper">
+
+            <!-- modal box -->
+            <!-- <div class="modalMessage shadow">
+            <div class="modal-header">
+                <h6>validation error</h6>
+                <button id="closeBtn-modal"> <i class="fas fa-times-square"></i></button>
+            </div>
+
+            <div class="modal-body">
+                <p>username entered is not valid</p>
+                <p>password entered is not valid</p>
+            </div>
+        </div> -->
+
+        </div>
+    </div>
+
+
+    <!-- alertBox wrapper -->
+    <div class="row" id="alertContainer">
+        <div class="alertWrapper" id="alertWrapper">
+
+            <!-- alert box -->
+            <!-- <div class="alertMessage shadow">
+            <div class="alert-header">
+                <h6>validation error</h6>
+                <button id="closeBtn-alert btn"> <i class="fas fa-times-square"></i></button>
+            </div>
+
+            <div class="alert-body">
+                <p>username entered is not valid</p>
+                <p>password entered is not valid</p>
+            </div>
+        </div> -->
+
+        </div>
+    </div>
+
+
+    <!-- main container -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- todo list -->
+            <div class="col-md-6 mt-5 mb-5">
+                <div class="todoListWrapper d-flex flex-column">
+
+                    <input type="text" class="form-control mb-2" id="taskTitleInput" aria-describedby="emailHelp"
+                           placeholder="task title">
+
+                    <textarea class="form-control mb-2" id="taskDescriptionInput" rows="3"
+                              placeholder="description"></textarea>
+
+                    <button class="btn btn-primary saveTaskBtn" id="saveTaskBtn" type="submit">create new
+                        task
+                    </button>
+                </div>
+
+
+                <div class="todoListCardsWrapper d-flex flex-column mt-5">
+
+
+                    <!-- todo card -->
+                    <div class="card d-flex flex-column p-2 mb-2" id="taskWrapper">
+                        <div id="taskStatusWrapper" class="p-2">
+                            <input type="checkbox" name="" id="taskStatusCheckbox">
+                        </div>
+
+                        <div id="taskTitleWrapper" class="p-2">
+                            <p id="taskTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem qui
+                                delectus ea
+                                quisquam animi sapiente consequatur. Sit quasi dolore saepe suscipit. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- notepad -->
+            <div class="col-md-6 mt-5 mb-5 ">
+
+                <div class="notepadWrapper d-flex flex-column">
+
+                        <textarea class="form-control mb-2" id="noteInput" rows="5"
+                                  placeholder="enter your note"></textarea>
+
+                    <button class="btn btn-primary" id="saveNoteBtn" type="submit">create new note</button>
+                </div>
+
+
+                <div class="noteCardsWrapper d-flex flex-column mt-5">
+                    <!-- todo card -->
+                    <div class="card d-flex flex-column p-2 mb-2" id="noteWrapper">
+                        <div id="noteWrapper" class="p-2">
+                            <p id="noteTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem qui
+                                delectus ea
+                                quisquam animi sapiente consequatur. Sit quasi dolore saepe suscipit. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+<script src="../../js/utility/alert.js"></script>
+<script src="../../js/home/home.js"></script>
+
+</body>
+
+</html>
